@@ -20,6 +20,6 @@ interface ContactDAO {
     suspend fun deleteContact(contact: Contact)
 
     @Query("SELECT * FROM contact")
-    suspend fun getContact() : LiveData<List<Contact>>
+    fun getContact() : LiveData<List<Contact>>
 
 }
